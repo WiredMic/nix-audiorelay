@@ -81,6 +81,8 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Stream audio between your devices.";
     homepage = "https://audiorelay.net/";
+    platforms = [ "x86_64-linux" ];
+    mainProgram = "AudioRelay";
     license = lib.licenses.unfree;
     maintainers = with lib.maintainers; [ ];
   };
